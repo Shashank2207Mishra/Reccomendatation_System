@@ -80,7 +80,7 @@ if st.button("Recommend"):
     #     st.write('<h4>{}</h4>'.format(name), unsafe_allow_html=True)
 
     i = 0
-    LIMIT = 5
+    LIMIT = 1
 
     while i < selected_number_of_choices:
         with st.container():
@@ -88,7 +88,7 @@ if st.button("Recommend"):
 
             while i < selected_number_of_choices:
                 cols[i % LIMIT].write('''
-                            <div style="width:10vw; height: 20vw;">
+                            <div style="width:10vw; height: 10vw;">
                                 <h6 style="text-align: center;">{}</h6>
                             </div>
                             '''.format(recommendations[0][i]), unsafe_allow_html=True)
