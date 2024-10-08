@@ -88,8 +88,8 @@ if st.button("Recommend"):
 
             while i < selected_number_of_choices:
                 cols[i % LIMIT].write('''
-                            <div style="width:100vw; height: 10vw;">
-                                <h6 style="text-align: center;">{}</h6>
+                            <div style="width:100vw; height: 5vw;">
+                                <h6 style="text-align: left;">{}</h6>
                             </div>
                             '''.format(recommendations[0][i]), unsafe_allow_html=True)
                 # print(recommendations[1][i])
